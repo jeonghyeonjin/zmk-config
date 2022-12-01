@@ -1,31 +1,37 @@
-# Corne-ish Zen Custom Configuration
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="/docs/images/KLOTZ_font_dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="/docs/images/KLOTZ_font_bright.svg">
+  <img alt="KLOTZ logo font" src="/docs/images/KLOTZ_font_bright.svg">
+</picture>
 
-![Corne-ish Zen Logo](zenlogo.png)
+# ZMK CONFIG FOR THE KLOTZ SPLIT KEYBOARD
 
-This repo is the official configuration of the Corne-ish Zen low profile wireless mechanical keyboard. Use it to develop your own keymap and easily build your own ZMK firmware to run on your Corne-ish Zen. These steps will get you using your keymap on your keyboard in the fastest time possible. It uses the GitHub Actions feature to build your firmware online, rather than setting up a complex tool chain on your local computer.
-If you are looking to dig deeper into ZMK and develop new functionality, it is recommended to follow the steps of installing ZMK as found on the official ZMK documentation site (linked below).
+[Here](https://github.com/GEIGEIGEIST/klotz) you can find the hardware files and build guide for the KLOTZ.
 
-**Note:** This process is temporary, and will be used until such time that the Corne-ish Zen board definition is merged into ZMK Main.
+KLOTZ is 34 keys column-staggered split keyboard running [ZMK](https://zmk.dev/). It supports a low profile encoder and three status LEDs on every side.
 
-## Resources
-- The [official ZMK Firmware GitHub](https://github.com/zmkfirmware/zmk) repository. View the keymaps for other boards and shields as a starting point for your keymap.
-- The [official ZMK Documentation](https://zmk.dev/docs) web site. Find the answers to many of your questions about ZMK Firmware.
-- The [official ZMK Discord Server](https://discord.gg/8cfMkQksSB). Instant conversations with other ZMK developers and users. Great technical resource!
+![KLOTZ layout](/docs/images/KLOTZ_layout.svg)
 
-## Instructions
-1. Log into, or sign up for, your personal GitHub account.
-2. Fork this repository to your local computer, and then push it to your GitHub personal account. ([instructions](https://docs.github.com/en/get-started/quickstart/fork-a-repo))
-3. Edit the keymap file(s) to suit your needs
-4. Commit and push your changes to your personal repo. Upon pushing it, GitHub Actions will start building a new version of your firmware with the updated keymap.
 
-## Firmware Files
-To locate your firmware files...
-1. log into GitHub and navigate to your personal config repository you just uploaded your keymap changes to.
-2. Click "Actions" in the main navigation, and in the left navigation click the "Build" link.
-3. Select the desired workflow run in the centre area of the page (based on date and time of the build you wish to use). You can also start a new build from this page by clicking the "Run workflow" button.
-4. After clicking the desired workflow run, you should be presented with a section at the bottom of the page called "Artifacts". This section contains the results of your build, in a file called "firmware.zip"
-5. Download the firmware zip archive and extract the two .uf2 files. They are named according to which side they need to be flashed to.
-6. Flash the firmware to your keyboard by double-clicking the reset button to put the it in bootloader mode. A window should pop up showing the contents of the storage on the keyboard. Drag and drop the correct .uf2 file into the window. When the upload is complete the window will close and the keyboard will exit bootloader mode.
+## HOW TO USE
 
-Your keyboard is now ready to use.
+- fork this repo
+- `git clone` your repo, to create a local copy on your PC (you can use the [command line](https://www.atlassian.com/git/tutorials) or [github desktop](https://desktop.github.com/))
+- adjust the klotz.keymap file (find all the keycodes on [the zmk docs pages](https://zmk.dev/docs/codes/))
+- `git push` your repo to your fork
+- on the GitHub page of your fork navigate to "Actions"
+- scroll down and unzip the `firmware.zip` archive that contains the latest firmware
+- connect the left half of the KLOTZ to your PC, press reset twice
+- the keyboard should now appear as a mass storage device
+- drag'n'drop the `klotz_left-nice_nano_v2-zmk.uf2` file from the archive onto the storage device
+- repeat this process with the right half and the `klotz_right-nice_nano_v2-zmk.uf2` file.
+
+
+## KNOWN ISSUES
+
+- The encoder on the secondary side doesn't work yet. This is a limitation of ZMK.
+- The code for the status LEDs needs to be added.
+
+
+
 
