@@ -64,107 +64,107 @@
 		key-positions = <30 31>;
 		bindings = <&mo SETTINGS>;
 	};
-	combo_settings {
+	combo_tab {
 		timeout-ms = <100>;
 		key-positions = <00 01>;
 		bindings = <&kp TAB>;
 	};
-	combo_settings {
+	combo_undo {
 		timeout-ms = <100>;
 		key-positions = <21 22>;
 		bindings = <&kp LC(Z)>;
 	};
-	combo_settings {
+	combo_1 {
 		timeout-ms = <100>;
 		key-positions = <00 10>;
 		bindings = <&kp N1>;
 	};
-	combo_settings {
+	combo_2 {
 		timeout-ms = <100>;
 		key-positions = <01 11>;
 		bindings = <&kp N2>;
 	};
-	combo_settings {
+	combo_3 {
 		timeout-ms = <100>;
 		key-positions = <02 12>;
 		bindings = <&kp N3>;
 	};
-	combo_settings {
+	combo_4 {
 		timeout-ms = <100>;
 		key-positions = <03 13>;
 		bindings = <&kp N4>;
 	};
-	combo_settings {
+	combo_5 {
 		timeout-ms = <100>;
 		key-positions = <04 14>;
 		bindings = <&kp N5>;
 	};
-	combo_settings {
+	combo_6 {
 		timeout-ms = <100>;
 		key-positions = <05 15>;
 		bindings = <&kp N6>;
 	};
-	combo_settings {
+	combo_7 {
 		timeout-ms = <100>;
 		key-positions = <06 16>;
 		bindings = <&kp N7>;
 	};
-	combo_settings {
+	combo_8 {
 		timeout-ms = <100>;
 		key-positions = <07 17>;
 		bindings = <&kp N8>;
 	};
-	combo_settings {
+	combo_9 {
 		timeout-ms = <100>;
 		key-positions = <08 18>;
 		bindings = <&kp N9>;
 	};
-	combo_settings {
+	combo_0 {
 		timeout-ms = <100>;
 		key-positions = <09 19>;
 		bindings = <&kp N0>;
 	};
-	combo_settings {
+	combo_equal {
 		timeout-ms = <100>;
 		key-positions = <15 16>;
 		bindings = <&kp EQUAL>;
 	};
-	combo_settings {
+	combo_minus {
 		timeout-ms = <100>;
 		key-positions = <25 26>;
 		bindings = <&kp MINUS>;
 	};
-	combo_settings {
+	combo_lpar {
 		timeout-ms = <100>;
 		key-positions = <02 03>;
 		bindings = <&kp LPAR>;
 	};
-	combo_settings {
+	combo_lbrc {
 		timeout-ms = <100>;
 		key-positions = <12 13>;
 		bindings = <&kp LBRC>;
 	};
-	combo_settings {
+	combo_lbkt {
 		timeout-ms = <100>;
 		key-positions = <22 23>;
 		bindings = <&kp LBKT>;
 	};
-	combo_settings {
+	combo_rpar {
 		timeout-ms = <100>;
 		key-positions = <06 07>;
 		bindings = <&kp RPAR>;
 	};
-	combo_settings {
+	combo_rbrc {
 		timeout-ms = <100>;
 		key-positions = <16 17>;
 		bindings = <&kp RBRC>;
 	};
-	combo_settings {
+	combo_rbkt {
 		timeout-ms = <100>;
 		key-positions = <26 27>;
 		bindings = <&kp RBKT>;
 	};
-	combo_settings {
+	combo_sqt {
 		timeout-ms = <100>;
 		key-positions = <17 18>;
 		bindings = <&kp SQT>;
