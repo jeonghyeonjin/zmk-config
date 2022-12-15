@@ -183,6 +183,7 @@
 						&mt LCTRL Z  &kp X &kp C &kp V &kp B           &kp N &kp M  &kp COMMA &kp DOT &mt LCTRL FSLH
 						&kp LALT &lt SYM2 SPACE &lt EXT SPACE &kp ESC       &kp B &lt SYM RET &lt FNC RET &kp BSPC
 						>;
+						sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 				};
 
         // Numbers and high frequency symbols
@@ -194,6 +195,7 @@
 						&trans &trans &trans &trans &trans 			   &trans &trans &kp DOWN &trans &kp BSLH
 							&trans &trans &mo SETTINGS &kp GRAVE       	   &trans &trans &trans &trans
 						>;
+						sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 				};
 
         // Main modifiers and arrow keys
@@ -205,6 +207,7 @@
 						&trans  &trans &trans &trans   &trans          &trans &trans &kp DOWN &trans  &kp PIPE
 								&trans &trans &trans &trans    &trans  &mo SETTINGS &trans &kp DEL
 						>;
+						sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 				};
 
         // Function keys with modifiers
@@ -216,17 +219,19 @@
 						&none &none &none &none &none				          &none &none &none &none &none 
 																&trans &trans &none &none              &none &none &trans &trans
 						>;
+						sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 				};
 
         // Low frequency symbols.
 				symbols_2_layer {
 						label = "Sym.2";
 						bindings = <
-						&trans &kp KP_N7 &kp KP_N8 &kp KP_N9 &trans         &none &none &none &none &none 
-						&trans &kp KP_N4 &kp KP_N5 &kp KP_N6 &trans         &none &none &none &none &none
-						&kp KP_N0 	&kp KP_N1 	&kp KP_N2 &kp KP_N3 &trans				  &none &none &none &none &none
+						&trans &kp N7 &kp N8 &kp N9 &trans         &none &none &none &none &none 
+						&trans &kp N4 &kp N5 &kp N6 &trans         &none &none &none &none &none
+						&kp N0 &kp N1 &kp N2 &kp N3 &trans				  &none &none &none &none &none
 													&trans &trans &none &none        	&none &none &kp B &kp B
 						>;
+						sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 				};
 
         // Used to type regional accents.
@@ -238,6 +243,7 @@
 						&none &none &none &kp IT_UGRV &none                         &none &none &none &none &none
 														&trans &trans &none &none                         &none &none &trans &trans
 						>;
+						sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 				};
 
         // Used to change the keyboard's settings.
@@ -249,6 +255,7 @@
 						&none &none &none &none      &bt BT_SEL 2               &bt BT_SEL 5 &none &none &none &none
 													&trans &trans &none &none                         &none &none &trans &trans
 						>;
+						sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 				};
 		};
 };

@@ -26,3 +26,7 @@
         , <&pro_micro 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // ROW3
     ;
 };
+
+&right_encoder {
+	status = "okay";
+};
