@@ -215,8 +215,8 @@
 						label = "FRow";
 						bindings = <
 						&kp F1 &kp F2 &kp F3 &kp F4 &kp F5                  &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 
-						&sk LALT &sk LGUI &sk LSHIFT &sk LCTRL &kp RALT     &kp F11 &kp F12  &kp PRINTSCREEN &trans &trans
-						&none &none &none &none &none				          &none &none &none &none &none 
+						&sk LALT &sk LGUI &sk LSHIFT &sk LCTRL &kp RALT     &trans &kp LEFT  &kp UP  &kp RIGHT   &trans
+						&kp F11 &kp F12  &kp PRINTSCREEN &none &none				          &trans &trans &kp DOWN &trans  &kp PIPE
 																&trans &trans &none &none              &none &none &trans &trans
 						>;
 						sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;

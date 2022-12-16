@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: MIT
  */
 
-#include "urchin.dtsi"
+#include "biscuit38.dtsi"
 
 &kscan0 {
     diode-direction = "col2row";

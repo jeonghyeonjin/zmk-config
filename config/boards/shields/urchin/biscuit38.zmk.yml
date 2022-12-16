@@ -1,0 +1,11 @@
+file_format: "1"
+id: biscuit38
+name: biscuit38
+type: shield
+url: https://github.com/jeonghyeonjin/zmk-config-biscuit
+requires: [pro_micro]
+features:
+  - keys
+siblings:
+  - biscuit38_left
+  - biscuit38_right

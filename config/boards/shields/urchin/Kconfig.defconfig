@@ -1,17 +1,17 @@
 # Copyright (c) 2022 Duccio Breschi
 # SPDX-License-Identifier: MIT
 
-if SHIELD_URCHIN_LEFT
+if SHIELD_BISCUIT38_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "urchin"
+    default "biscuit38"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
 endif
 
-if SHIELD_URCHIN_LEFT || SHIELD_URCHIN_RIGHT
+if SHIELD_BISCUIT38_LEFT || SHIELD_BISCUIT38_RIGHT
 config ZMK_SPLIT
     default y
 endif
