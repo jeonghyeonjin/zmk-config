@@ -23,7 +23,7 @@
   quick-tap-ms = <80>;
 //   global-quick-tap;
   flavor = "tap-preferred";
-  tapping-term-ms = <125>;
+  tapping-term-ms = <138>;
 };
 
 &sk {
