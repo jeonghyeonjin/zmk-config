@@ -16,13 +16,12 @@
     #define EXT 2
     #define FNC 3
     #define SYM2 4
-    #define ACCENT 5
-		#define SETTINGS 6
+	#define SETTINGS 5
 // -----------------
 
 &mt {
   quick-tap-ms = <80>;
-  global-quick-tap;
+//   global-quick-tap;
   flavor = "tap-preferred";
   tapping-term-ms = <125>;
 };
@@ -46,24 +45,6 @@
 
     combos {
         compatible = "zmk,combos";
-		// both right thumb keys
-			combo_accent {
-			timeout-ms = <100>;
-			key-positions = <36 37>;
-			bindings = <&mo ACCENT>;
-			};
-		// internal-left & external-right thumb keys
-		combo_sym2 {
-			timeout-ms = <100>;
-			key-positions = <32 33>;
-			bindings = <&mo SYM2>;
-		};
-		// both left thumb keys
-		combo_settings {
-			timeout-ms = <100>;
-			key-positions = <33 36>;
-			bindings = <&mo SETTINGS>;
-		};
 		combo_tab {
 			timeout-ms = <50>;
 			key-positions = <0 1>;
@@ -178,10 +159,10 @@
 				default_layer {
 						label = "Base";
 						bindings = <
-						&kp Q 		 &kp W &kp E &kp R &kp T           &kp Y &kp U  &kp I     &kp O   &kp P 
-						&mt LSHIFT A &kp S &kp D &kp F &kp G           &kp H &kp J  &kp K     &kp L   &mt LSHIFT SEMI
-						&mt LCTRL Z  &kp X &kp C &kp V &kp B           &kp N &kp M  &kp COMMA &kp DOT &mt LCTRL FSLH
-						&kp LALT &lt SYM2 SPACE &lt EXT SPACE &kp ESC       &kp B &lt SYM RET &lt FNC RET &kp BSPC
+						&kp Q 		 &kp W	&kp E		&kp R 			&kp T           	 			&kp Y 			&kp U  	  	&kp I       &kp O    &kp P 
+						&mt LSHIFT A &kp S	&kp D		&kp F 			&kp G           	 			&kp H 			&kp J  	  	&kp K       &kp L    &mt LSHIFT SEMI
+						&mt LCTRL Z  &kp X	&kp C		&kp V 			&kp B			&kp ESC	&kp B	&kp N 			&kp M  	  	&kp COMMA   &kp DOT  &mt LCTRL FSLH
+									 		&kp LALT	&lt SYM2 SPACE	&lt EXT SPACE 	      			&lt SYM RET  	&lt FNC RET &kp BSPC
 						>;
 						sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 				};
@@ -190,10 +171,10 @@
 				sym_layer {
 						label = "Sym.";
 						bindings = <
-						&kp N1 &kp N2 &kp N3 &kp N4 &kp N5		       &kp N6 &kp N7 &kp N8 &kp N9 &kp N0
-						&trans &trans &trans &trans &trans  		   &trans &kp LEFT  &kp UP  &kp RIGHT &trans
-						&trans &trans &trans &trans &trans 			   &trans &trans &kp DOWN &trans &kp BSLH
-							&trans &trans &mo SETTINGS &kp GRAVE       	   &trans &trans &trans &trans
+						&kp N1	&kp N2	&kp N3	&kp N4	&kp N5							&kp N6	&kp	N7		&kp N8		&kp N9		&kp N0
+						&trans	&trans	&trans	&trans	&trans							&trans	&kp LEFT	&kp UP  	&kp RIGHT	&trans
+						&trans	&trans	&trans	&trans	&trans		&kp GRAVE	&trans	&trans	&trans		&kp DOWN	&trans		&kp BSLH
+										&trans	&trans	&mo SETTINGS       	    		&trans 	&trans		&trans
 						>;
 						sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 				};
@@ -202,10 +183,10 @@
 		    ext_layer {
 						label = "Mods";
 						bindings = <
-						&kp EXCL  &kp AT &kp HASH  &kp DLLR  &kp PRCNT    			&kp CARET  &kp AMPS &kp ASTRK &kp LPAR &kp RPAR
-						&trans &trans  &trans  &trans  &trans 			&trans &kp LEFT  &kp UP  &kp RIGHT   &trans
-						&trans  &trans &trans &trans   &trans          &trans &trans &kp DOWN &trans  &kp PIPE
-								&trans &trans &trans &trans    &trans  &mo SETTINGS &trans &kp DEL
+						&kp EXCL  	&kp AT 	&kp HASH  	&kp DLLR  	&kp PRCNT    				&kp CARET		&kp AMPS	&kp ASTRK	&kp LPAR	&kp RPAR
+						&trans		&trans  &trans  	&trans  	&trans 						&trans 			&kp LEFT	&kp UP		&kp RIGHT   &trans
+						&trans  	&trans 	&trans 		&trans   	&trans 		&trans  &trans	&trans			&trans		&kp DOWN	&trans  &kp PIPE
+											&trans 		&trans 		&trans      				&mo SETTINGS 	&trans 		&kp DEL
 						>;
 						sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 				};
@@ -214,10 +195,10 @@
 				fnc_layer {
 						label = "FRow";
 						bindings = <
-						&kp F1 &kp F2 &kp F3 &kp F4 &kp F5                  &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 
-						&sk LALT &sk LGUI &sk LSHIFT &sk LCTRL &kp RALT     &trans &kp LEFT  &kp UP  &kp RIGHT   &trans
-						&kp F11 &kp F12  &kp PRINTSCREEN &none &none				          &trans &trans &kp DOWN &trans  &kp PIPE
-																&trans &trans &none &none              &none &none &trans &trans
+						&kp F1		&kp F2		&kp F3			&kp F4		&kp F5                  	&kp F6	&kp F7		&kp F8		&kp F9		&kp F10 
+						&sk LALT	&sk LGUI	&sk LSHIFT		&sk LCTRL	&kp RALT     				&trans	&kp LEFT	&kp UP		&kp RIGHT	&trans
+						&kp F11		&kp F12		&kp PRINTSCREEN	&none		&none		&none	&none	&trans	&trans		&kp DOWN	&trans		&kp PIPE
+												&trans			&trans		&none              			&none	&trans		&trans
 						>;
 						sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 				};
@@ -226,22 +207,10 @@
 				symbols_2_layer {
 						label = "Sym.2";
 						bindings = <
-						&trans &kp N7 &kp N8 &kp N9 &trans         &none &none &none &none &none 
-						&trans &kp N4 &kp N5 &kp N6 &trans         &none &none &none &none &none
-						&kp N0 &kp N1 &kp N2 &kp N3 &trans				  &none &none &none &none &none
-													&trans &trans &none &none        	&none &none &kp B &kp B
-						>;
-						sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
-				};
-
-        // Used to type regional accents.
-				accent_layer {
-						label = "Accent";
-						bindings = <
-						&none &none &none &kp IT_CEGR &none                         &none &none &none &none &none 
-						&kp IT_AGRV &kp IT_IGRV &kp IT_OGRV &kp IT_EGRV &kp IT_EACU &none &none &none &none &none
-						&none &none &none &kp IT_UGRV &none                         &none &none &none &none &none
-														&trans &trans &none &none                         &none &none &trans &trans
+						&trans 	&kp N7	&kp N8	&kp N9	&trans         			&none 	&none	&none	&none	&none 
+						&trans	&kp N4	&kp N5	&kp N6	&trans         			&none	&none	&none	&none	&none
+						&kp N0	&kp N1	&kp N2	&kp N3	&trans	&none	&none	&none	&none	&none	&none	&none
+										&trans	&trans	&none        	 		&none	&kp B	&kp B
 						>;
 						sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 				};
@@ -250,10 +219,10 @@
 				settings_layer {
 						label = "Sett.";
 						bindings = <
-						&bootloader &none &none &bt BT_CLR &bt BT_SEL 0               &bt BT_SEL 3 &none &unstick &none &bootloader 
-						&none &none &none &none      &bt BT_SEL 1 						  &bt BT_SEL 4 &none &none &none &none
-						&none &none &none &none      &bt BT_SEL 2               &bt BT_SEL 5 &none &none &none &none
-													&trans &trans &none &none                         &none &none &trans &trans
+						&bootloader &none	&none	&bt BT_CLR	&bt BT_SEL 0         			&bt BT_SEL 3	&none	&unstick	&none	&bootloader 
+						&none 		&none	&none	&none		&bt BT_SEL 1 					&bt BT_SEL 4	&none	&none		&none	&none
+						&none 		&none	&none	&none		&bt BT_SEL 2	 &none	&none	&bt BT_SEL 5	&none	&none		&none	&none
+											&trans	&trans		&none                          	&none			&trans	&trans
 						>;
 						sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 				};
