@@ -22,7 +22,7 @@
   quick-tap-ms = <80>;
 //   global-quick-tap;
   flavor = "tap-preferred";
-  tapping-term-ms = <138>;
+  tapping-term-ms = <139>;
 };
 
 &sk {
@@ -107,12 +107,12 @@
 		combo_equal {
 			timeout-ms = <50>;
 			key-positions = <15 16>;
-			bindings = <&kp EQUAL>;
+			bindings = <&kp MINUS>;
 		};
 		combo_minus {
 			timeout-ms = <50>;
 			key-positions = <27 28>;
-			bindings = <&kp MINUS>;
+			bindings = <&kp EQUAL>;
 		};
 		combo_lpar {
 			timeout-ms = <50>;
@@ -149,6 +149,11 @@
 			key-positions = <17 18>;
 			bindings = <&kp SQT>;
 		};
+		combo_sqt {
+			timeout-ms = <50>;
+			key-positions = <29 30>;
+			bindings = <&kp BSLH>;
+		};
     };
 
     keymap {
@@ -183,8 +188,8 @@
 						label = "Sym";
 						bindings = <
 						&kp EXCL  	&kp AT 	&kp HASH  	&kp DLLR  	&kp PRCNT    					&kp CARET	&kp AMPS	&kp ASTRK	&kp LPAR	&kp RPAR
-						&trans		&trans  &trans  	&trans  	&trans 							&kp MINUS 	&kp EQUAL	&trans		&kp LBRC   	&kp RBRC
-						&trans  	&trans 	&trans 		&trans   	&trans 		&kp GRAVE  &trans	&kp UNDER	&kp PLUS	&trans		&kp LBKT 	&kp RBKT
+						&trans		&trans  &trans  	&trans  	&trans 							&kp MINUS 	&kp EQUAL	&kp BSLH	&kp LBRC   	&kp RBRC
+						&trans  	&trans 	&trans 		&trans   	&trans 		&kp GRAVE  &trans	&kp UNDER	&kp PLUS	&kp PIPE	&kp LBKT 	&kp RBKT
 											&trans 		&trans 		&trans      					&mo SETT 	&trans 		&kp DEL
 						>;
 						sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
