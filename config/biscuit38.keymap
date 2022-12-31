@@ -21,8 +21,8 @@
 &mt {
   quick-tap-ms = <80>;
 //   global-quick-tap;
-  flavor = "tap-preferred";
-  tapping-term-ms = <142>;
+  flavor = "balanced";
+  tapping-term-ms = <150>;
 };
 
 &sk {
