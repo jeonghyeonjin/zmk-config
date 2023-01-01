@@ -122,7 +122,17 @@
 		combo_under {
 			timeout-ms = <40>;
 			key-positions = <15 27>;
-			bindings = <&kp MINUS>;
+			bindings = <&kp UNDER>;
+		};
+		combo_bslh2 {
+			timeout-ms = <40>;
+			key-positions = <17 29>;
+			bindings = <&kp BSLH>;
+		};
+		combo_sqt2 {
+			timeout-ms = <40>;
+			key-positions = <18 30>;
+			bindings = <&kp SQT>;
 		};
 		combo_equal {
 			timeout-ms = <20>;
