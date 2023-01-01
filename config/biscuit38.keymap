@@ -60,64 +60,84 @@
 			bindings = <&kp LC(Z)>;
 		};
 		combo_1 {
-			timeout-ms = <35>;
+			timeout-ms = <40>;
 			key-positions = <0 10>;
 			bindings = <&kp N1>;
 		};
 		combo_2 {
-			timeout-ms = <35>;
+			timeout-ms = <40>;
 			key-positions = <1 11>;
 			bindings = <&kp N2>;
 		};
 		combo_3 {
-			timeout-ms = <35>;
+			timeout-ms = <40>;
 			key-positions = <2 12>;
 			bindings = <&kp N3>;
 		};
 		combo_4 {
-			timeout-ms = <35>;
+			timeout-ms = <40>;
 			key-positions = <3 13>;
 			bindings = <&kp N4>;
 		};
 		combo_5 {
-			timeout-ms = <35>;
+			timeout-ms = <40>;
 			key-positions = <4 14>;
 			bindings = <&kp N5>;
 		};
 		combo_6 {
-			timeout-ms = <35>;
+			timeout-ms = <40>;
 			key-positions = <5 15>;
 			bindings = <&kp N6>;
 		};
 		combo_7 {
-			timeout-ms = <35>;
+			timeout-ms = <40>;
 			key-positions = <6 16>;
 			bindings = <&kp N7>;
 		};
 		combo_8 {
-			timeout-ms = <35>;
+			timeout-ms = <40>;
 			key-positions = <7 17>;
 			bindings = <&kp N8>;
 		};
 		combo_9 {
-			timeout-ms = <35>;
+			timeout-ms = <40>;
 			key-positions = <8 18>;
 			bindings = <&kp N9>;
 		};
 		combo_0 {
-			timeout-ms = <35>;
+			timeout-ms = <40>;
 			key-positions = <9 19>;
 			bindings = <&kp N0>;
 		};
-		combo_equal {
+		combo_minus {
 			timeout-ms = <20>;
 			key-positions = <15 16>;
 			bindings = <&kp MINUS>;
 		};
-		combo_minus {
+		combo_minus2 {
+			timeout-ms = <40>;
+			key-positions = <16 28>;
+			bindings = <&kp MINUS>;
+		};
+		combo_under {
+			timeout-ms = <40>;
+			key-positions = <15 27>;
+			bindings = <&kp MINUS>;
+		};
+		combo_equal {
 			timeout-ms = <20>;
 			key-positions = <27 28>;
 			bindings = <&kp EQUAL>;
+		};
+		combo_equal2 {
+			timeout-ms = <40>;
+			key-positions = <13 23>;
+			bindings = <&kp EQUAL>;
+		};
+		combo_plus {
+			timeout-ms = <40>;
+			key-positions = <14 24>;
+			bindings = <&kp PLUS>;
 		};
 		combo_lpar {
 			timeout-ms = <20>;
