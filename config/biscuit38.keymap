@@ -18,6 +18,8 @@
 	#define SETT 5
 // -----------------
 
+#define QUICK_TAP_MS 175
+
 &mt {
   quick-tap-ms = <80>;
 //   global-quick-tap;
