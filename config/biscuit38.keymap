@@ -30,6 +30,12 @@
     ignore-modifiers;
 };
 
+&lt {  // layer-tap config
+    flavor = "balanced";
+    tapping-term-ms = <200>;
+    quick-tap-ms = <QUICK_TAP_MS>;
+};
+
 / {
 		macros {
 				// sometimes my device thinks a modifier is being held down
