@@ -4,7 +4,7 @@
 if SHIELD_BISCUIT38_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "biscuit38"
+    default "BISCUIT38"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y

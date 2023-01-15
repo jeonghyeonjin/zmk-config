@@ -1,6 +1,6 @@
 file_format: "1"
-id: biscuit38
-name: biscuit38
+id: BISCUIT38
+name: BISCUIT38
 type: shield
 url: https://github.com/jeonghyeonjin/zmk-config-biscuit
 requires: [pro_micro]
